@@ -17,22 +17,10 @@
 
 			time -= step;
 			var element;
-			if(time - step > 0) {
+			if(time - step >= 0) {
 				element = maintext.split("");
 				for (var l = 0; l < element.length; l++) {
 					element[l].match(/[a-z]/gi) && (element[l] = alphabet.charAt(Math.floor(Math.random() * alphabet.length)));
-				}
-				el.text(element.join(""));
-			}
-			else if(0 >= time - step && time > 0) {
-				element = maintext.split("");
-				for (var c = shaketext.split(""), d = 0; d < element.length; d++) {
-					if(d % 2 === 0) {
-						element[d];
-					}
-					else {
-						c[d];
-					}
 				}
 				el.text(element.join(""));
 			}
