@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Hastalavistababy/textshake#readme",
   "dependencies": {
-    "bower": "^1.7.9"
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "^1.0.1"
   }
 }
