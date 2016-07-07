@@ -1,0 +1,23 @@
+{
+  "name": "textshake",
+  "version": "0.0.1",
+  "description": "",
+  "main": "textShake.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hastalavistababy/textshake.git"
+  },
+  "keywords": [
+    "shake",
+    "textshake"
+  ],
+  "author": "Mogeli lortkipanidze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hastalavistababy/textshake/issues"
+  },
+  "homepage": "https://github.com/Hastalavistababy/textshake#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text shake</title>
+	<!-- Include jQuery -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- style -->
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #191919;
+		}
+
+		.e {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		a {
+			text-align: center;
+			color: #fff;
+			text-shadow: 0.5vw 0.5vw #191919, 0.6vw 0.6vw #ebebeb;
+			font-size: 10vw;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="e">
+		<a href="#" data-maintext="Hover me" data-shaketext="Thanks">Hover me</a>
+	</div>
+	
+	<script src="textShake.js"></script>
+	<script>
+		$(document).ready(function(){
+			// textShake(time, step, maintext, afteshaketext, function)
+			$('a').hover(function(){
+				$(this).textShake(500, 100, $(this).data('maintext'), $(this).data('shaketext'), function(){
+					console.log('Do something.')
+				})
+			},function(){
+				$(this).textShake(500, 100, $(this).data('shaketext'), $(this).data('maintext'), function(){
+					console.log('Do something again xD.')
+				});
+			});
+		});
+	</script>
+</body>
+</html>
